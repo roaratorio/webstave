@@ -1,0 +1,70 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+canvas {
+  display: block;
+}
+/* Style the slider's thumb (draggable part) */
+.custom-slider {
+  -webkit-appearance: none;
+  appearance: none; 
+  width: 20%;
+  cursor: pointer;
+  outline: none;
+  overflow: hidden;
+  border-radius: 16px;
+
+}
+
+.custom-slider::-webkit-slider-runnable-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+
+}
+
+.custom-slider::-moz-range-track {
+  height: 15px;
+  background: #ccc;
+  border-radius: 16px;
+}
+
+
+
+/* Style the slider's thumb (circle) */
+.custom-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none; 
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 2px solid #000000;
+  box-shadow: -407px 0 0 400px #000000;
+
+}
+
+/* Style the slider's track (background) */
+ .custom-slider::-webkit-slider-runnable-track {
+    width: 20%;
+    height: 15px;
+    cursor: pointer;
+    border: 1px solid rgb(0,0,0);
+    background: rgb(255,253,253); /* Set the track color to black */
+} 
+
+.custom-slider::-moz-range-thumb {
+  height: 15px;
+  width: 15px;
+  background-color: #fff;
+  border-radius: 50%;
+  border: 1px solid rgb(0,0,0);
+  box-shadow: -407px 0 0 400px rgb(0,0,0);
+} 
+
+
+/* Style the slider's thumb on hover */
+.custom-slider:hover {
+    opacity: 1;
+}
